@@ -1,0 +1,124 @@
+@media screen and (max-width:992px){
+    .section{
+      padding-top: 4rem;
+    }
+     
+ }
+ @media screen and (min-width:992px){
+     .section{
+       padding-top: 19rem;
+     }
+      
+  }
+  
+  *{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ 
+ html{
+   font-size: 6px;
+ }
+ @media screen and (min-width:576px) {
+   .container{
+       max-width: 540px;
+   }
+   html{
+       font-size: 6px;
+   }
+ 
+ 
+ }
+ @media screen and (min-width:768px) {
+   .container{
+       max-width: 720px;
+   }
+   html{
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:992px) {
+   .container{
+       max-width: 960px;
+   }
+   html {
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:1200px) {
+   .container{
+       max-width: 1140px;
+   }
+   html{
+       font-size: 9px;
+   }
+ }
+  /*Template Sonrası*/
+ 
+  /* Genel Ayarlar */
+  .section {
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9; /* Arka plan rengi */
+    position: relative;
+    display: block;
+    margin: auto 0;
+    padding-bottom: 40px;
+
+    background-color: #f9f9f9; /* Arka plan rengi */
+    clear: both;
+}
+
+
+.management-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Ortala */
+    text-align: center; /* Başlıkları ortala */
+}
+
+.management-container h2 {
+    margin-bottom: 4rem; /* Alt boşluk */
+    color: #333; /* Başlık rengi */
+    font-size: 5rem; /* Başlık boyutu */
+}
+
+.management-members {
+    display: flex;
+    flex-wrap: wrap; /* Satırda taşmayı engelle */
+    justify-content: space-around; /* Üyeleri eşit aralıkla yerleştir */
+}
+
+.member-card {
+    background-color: #ffffff; /* Beyaz arka plan */
+    border-radius: 10px; /* Kenar yuvarlama */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+    margin: 1rem; /* Dış boşluk */
+    padding: 1.5rem; /* İç boşluk */
+    width: 250px; /* Kart genişliği */
+    transition: transform 0.3s; /* Geçiş efekti */
+}
+
+.member-card:hover {
+    transform: translateY(-5px); /* Hover efekt */
+}
+
+.member-photo {
+    width: 100%; /* Resim genişliği */
+    height: auto; /* Otomatik yükseklik */
+    border-radius: 10px; /* Kenar yuvarlama */
+}
+
+.member-title {
+    font-weight: bold; /* Kalın yazı */
+    color: #007BFF; /* Unvan rengi */
+    margin: 0.5rem 0; /* Üst ve alt boşluk */
+}
+
+.member-description {
+    color: #555; /* Açıklama rengi */
+    font-size: 1.3rem; /* Açıklama boyutu */
+    line-height: 1.5; /* Satır yüksekliği */
+}

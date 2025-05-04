@@ -1,0 +1,144 @@
+@media screen and (max-width:992px){
+    .section{
+      padding-top: 4rem;
+    }
+     
+ }
+ @media screen and (min-width:992px){
+     .section{
+       padding-top: 19rem;
+     }
+      
+  }
+  
+  *{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ 
+ html{
+   font-size: 6px;
+ }
+ @media screen and (min-width:576px) {
+   .container{
+       max-width: 540px;
+   }
+   html{
+       font-size: 6px;
+   }
+ 
+ 
+ }
+ @media screen and (min-width:768px) {
+   .container{
+       max-width: 720px;
+   }
+   html{
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:992px) {
+   .container{
+       max-width: 960px;
+   }
+   html {
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:1200px) {
+   .container{
+       max-width: 1140px;
+   }
+   html{
+       font-size: 9px;
+   }
+ }
+  /*Template Sonrası*/
+ 
+  /* Genel Ayarlar */
+  .section {
+    width: 100%;
+    height: auto;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+    padding-bottom: 40px;
+
+
+    background-color: #f0f0f0; /* Arka plan rengi */
+    text-align: center; /* Metin ortalaması */
+ 
+    clear: both;
+    
+}
+
+
+.advertisement {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0;
+}
+
+.advertisement video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+}
+
+.column {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1; /* Sütunlar eşit genişlikte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.column.filled {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e0e0e0; /* Boş sütun için arka plan rengi */
+}
+
+.column:hover {
+  transform: translateY(-5px); /* Hover ile animasyon */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.column .icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.column h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.column p {
+  font-size: 14px;
+  color: #666;
+}

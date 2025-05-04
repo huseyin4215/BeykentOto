@@ -1,0 +1,130 @@
+@media screen and (max-width:992px){
+    .section{
+      padding-top: 4rem;
+    }
+     
+ }
+ @media screen and (min-width:992px){
+     .section{
+       padding-top: 19rem;
+     }
+      
+  }
+  
+  *{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ 
+ html{
+   font-size: 6px;
+ }
+ @media screen and (min-width:576px) {
+   .container{
+       max-width: 540px;
+   }
+   html{
+       font-size: 6px;
+   }
+ 
+ 
+ }
+ @media screen and (min-width:768px) {
+   .container{
+       max-width: 720px;
+   }
+   html{
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:992px) {
+   .container{
+       max-width: 960px;
+   }
+   html {
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:1200px) {
+   .container{
+       max-width: 1140px;
+   }
+   html{
+       font-size: 9px;
+   }
+ }
+  /*Template Sonrası*/
+ 
+  /* Genel Ayarlar */
+  .section {
+    width: 100%;
+    height: auto;
+
+    position: relative;
+    display: block;
+    margin: auto 0;
+    padding-bottom: 40px;
+
+    text-align: center;
+    background: linear-gradient(135deg, #f9f9f9, #e3e3e3); /* Degrade arka plan */
+ 
+    clear: both;
+    
+}
+
+
+.section .container {
+    width: 100%;
+    margin: 0 auto; /* Ortala */
+    display: flex; /* Flex kullan */
+    flex-direction: column; /* Dikey hizalama */
+    gap: 2rem; /* Kartlar arasında boşluk */
+    border-radius: 20px; /* Yuvarlatılmış köşeler */
+    overflow: hidden; /* Taşmaları gizle */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Gölge efekti */
+    padding: 2rem; /* İç boşluk */
+}
+
+.mission, .vision {
+    background: #fff; /* Beyaz arka plan */
+    border-radius: 15px; /* Yuvarlatılmış köşeler */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+    position: relative; /* Konumlandırma için gerekli */
+    transition: transform 0.3s; /* Geçiş animasyonu */
+    padding: 2rem; /* İç boşluk */
+}
+
+.mission:hover, .vision:hover {
+    transform: translateY(-10px); /* Hover etkisi ile yukarı kaydır */
+}
+
+.mission h2, .vision h2 {
+    font-size: 5rem; /* Başlık boyutu */
+    margin-bottom: 1rem; /* Alt boşluk */
+    color: #2c3e50; /* Başlık rengi */
+}
+
+.mission p, .vision p {
+    line-height: 1.6; /* Satır yüksekliği */
+    color: #34495e; /* Metin rengi */
+    font-size: 2rem; /* Metin boyutu */
+    margin-bottom: 1rem; /* Alt boşluk */
+}
+
+/* Mobil uyumluluk */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem; /* Mobilde iç boşluk */
+    }
+
+    .mission h2, .vision h2 {
+        font-size: 1.5rem; /* Mobilde başlık boyutu */
+    }
+
+    .mission p, .vision p {
+        font-size: 1rem; /* Mobilde metin boyutu */
+    }
+}

@@ -1,0 +1,409 @@
+@media screen and (max-width:992px){
+  .section{
+    padding-top: 2rem;
+  }
+   
+}
+@media screen and (min-width:992px){
+   .section{
+     padding-top: 17rem;
+   }
+    
+}
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+html{
+ font-size: 6px;
+}
+@media screen and (min-width:576px) {
+ .container{
+     max-width: 540px;
+ }
+ html{
+     font-size: 6px;
+ }
+
+
+}
+@media screen and (min-width:768px) {
+ .container{
+     max-width: 720px;
+ }
+ html{
+     font-size: 7px;
+ }
+
+}
+@media screen and (min-width:992px) {
+ .container{
+     max-width: 960px;
+ }
+ html {
+     font-size: 7px;
+ }
+
+}
+@media screen and (min-width:1200px) {
+ .container{
+     max-width: 1140px;
+ }
+ html{
+     font-size: 9px;
+ }
+}
+/*Template Sonrası*/
+
+/* Genel Ayarlar */
+.section {
+ height: 700px;
+ position: relative; /* Konumlandırma için gerekli */
+ display: flex;
+ justify-content: center;
+ align-items: center; /* Dikey ortalama */
+ clear: both;
+}
+
+
+
+/* Ekran genişliği 576px ve altı (mobil cihazlar) */
+/* Ekran genişliği 480px ve altı (en küçük mobil cihazlar) */
+@media screen and (max-width: 480px) {
+ .section {
+     height: 150px; /* İlk adım */
+ }
+}
+
+/* Ekran genişliği 481px - 576px arası (mobil cihazlar) */
+@media screen and (min-width: 481px) and (max-width: 576px) {
+ .section {
+     height: 250px; /* İkinci adım */
+ }
+}
+
+/* Ekran genişliği 577px - 768px arası (tabletler) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+ .section {
+     height: 300px; /* Üçüncü adım */
+ }
+}
+
+/* Ekran genişliği 769px - 992px arası (büyük tabletler ve küçük dizüstü bilgisayarlar) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+ .section {
+     height: 350px; /* Dördüncü adım */
+     
+ }
+}
+
+/* Ekran genişliği 993px - 1200px arası (dizüstü bilgisayarlar) */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+ .section {
+     height: 450px; /* Beşinci adım */
+     padding-top: 15.6rem; /* Aynı zamanda padding-top değeri */
+ }
+}
+
+/* Ekran genişliği 1201px ve üstü (masaüstü ve büyük ekranlar) */
+@media screen and (min-width: 1201px) {
+ .section {
+     height: 550px; /* Altıncı ve son adım */
+     padding-top: 15.6rem; /* Aynı zamanda padding-top değeri */
+ }
+}
+
+
+
+.container-img {
+ width: 100%;
+ height: 100%;
+ position: relative;
+}
+
+.hakkimizda-img img {
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0.5; /* Resmin şeffaflığı */
+}
+
+.header-text {
+ position: absolute; /* İçeriği mutlak konumlandırma */
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%); /* Tam ortalama için */
+ z-index: 1; /* Başlık resmi üstünde görünecek */
+ text-align: center;
+}
+
+.header-text h1 {
+ color: #fff;
+ font-size: 7rem; /* Font boyutunu ihtiyaca göre ayarlayabilirsiniz */
+
+
+}
+
+
+
+
+/* Temel yapı */
+.section-context{
+ width: 100%;
+ height: auto;
+
+}
+.section-context .container{
+ width: 100%;
+ height: auto;
+ padding: 50px 0px;
+ 
+}
+.section-context .container p{
+font-size:large;
+ 
+}
+
+
+/* Mobil uyum */
+@media screen and (max-width: 768px) {
+ .context {
+     padding: 1.5rem;
+ }
+ .context p {
+     font-size: 1rem;
+ }
+}
+
+
+/* Genel Ayarlar */
+.section-mrk {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding-bottom: 40px;
+  background-color: #f0f0f0; /* Arka plan rengi */
+  text-align: center; /* Metin ortalaması */
+  clear: both;
+}
+
+.section-mrk .column {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+  flex-basis: calc(33.33% - 20px); /* Sütun genişliğini tanımla (3 sütun) */
+  box-sizing: border-box; /* Kenar boşlukları dahil genişlik hesaplaması */
+  margin: 10px; /* Sütunlar arasındaki boşluk */
+}
+
+.section-mrk .column img {
+  width: 100%;
+  height: auto;
+
+}
+
+.section-mrk .column h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.section-mrk .column p {
+  padding: 0 15px;
+  font-size: 16px;
+  color: #666;
+}
+
+.section-mrk .column a.more {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.section-mrk .column a.more:hover {
+  background-color: #2980b9;
+}
+
+.section-mrk .column:hover {
+  transform: translateY(-10px); /* Hover ile animasyon */
+}
+
+.section-mrk .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media Queries - Tablet (2 column) */
+@media (max-width: 768px) {
+  .section-mrk .column {
+      flex-basis: calc(50% - 20px); /* 2 sütun düzeni */
+  }
+}
+
+/* Media Queries - Mobile (1 column) */
+@media (max-width: 576px) {
+  .section-mrk {
+      display: block; /* Flex yerine block kullanarak her sütunu tam genişlikte yap */
+  }
+  .section-mrk .column {
+      width: 100%; /* Mobilde tam genişlik */
+      margin: 0 0 20px 0; /* Yatay kenar boşluklarını kaldır */
+  }
+}
+
+/* Genel Ayarlar */
+.section-mrk {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 40px;
+  background-color: #f0f0f0; /* Arka plan rengi */
+  text-align: center; /* Metin ortalaması */
+  clear: both;
+}
+.section-mrk .content-h1{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 30px 0px;
+
+}
+.section-mrk .content-h1 h1{
+
+  font-size: 5rem;
+
+}
+
+.section-mrk .column {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+  flex-basis: calc(33.33% - 20px); /* Sütun genişliğini tanımla (3 sütun) */
+  box-sizing: border-box; /* Kenar boşlukları dahil genişlik hesaplaması */
+  margin: 10px; /* Sütunlar arasındaki boşluk */
+}
+
+
+.section-mrk .column img {
+  width: 100%;
+  height: auto;
+
+}
+
+.section-mrk .column h3 {
+  font-size: 2.2rem;
+  margin: 10px 0;
+}
+
+.section-mrk .column p {
+  padding: 0 15px;
+  font-size: 1.6rem;
+  color: #666;
+}
+
+.section-mrk .column a.more {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.section-mrk .column a.more:hover {
+  background-color: #2980b9;
+}
+
+.section-mrk .column:hover {
+  transform: translateY(-10px); /* Hover ile animasyon */
+}
+
+.section-mrk .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Son Column'a özel stil */
+.column-end {
+  padding: 50px 0px;
+  border: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+  transition: transform 0.4s ease, background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 30px; /* Alt tarafta boşluk bırak */
+}
+
+.column-end:hover {
+  transform: scale(1.05); /* Hover üzerinde hafifçe büyütme */
+  background-color: rgb(88, 112, 136); /* Hover durumunda arka plan rengi değişimi */
+}
+
+/* Buton stilini özel hale getir */
+.special-more {
+  padding: 15px 30px;
+  background-color: #e74c3c; /* Dikkat çekici kırmızı renk */
+  color: #fff;
+  font-size: rem;
+  font-weight: bold;
+  border-radius: 50px; /* Oval kenarlar */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 8px rgba(231, 76, 60, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.special-more:hover {
+  background-color: #c0392b; /* Hover ile buton rengi değişsin */
+  box-shadow: 0 6px 12px rgba(192, 57, 43, 0.3); /* Hover ile gölge derinleşsin */
+}
+
+/* Media Queries - Tablet (2 column) */
+@media (max-width: 768px) {
+  .section-mrk .column {
+      flex-basis: calc(50% - 20px); /* 2 sütun düzeni */
+  }
+}
+
+/* Media Queries - Mobile (1 column) */
+@media (max-width: 576px) {
+  .section-mrk {
+      display: block; /* Flex yerine block kullanarak her sütunu tam genişlikte yap */
+  }
+  .section-mrk .column {
+      width: 100%; /* Mobilde tam genişlik */
+      margin: 0 0 20px 0; /* Yatay kenar boşluklarını kaldır */
+  }
+}
+

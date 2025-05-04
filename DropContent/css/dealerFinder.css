@@ -1,0 +1,268 @@
+@media screen and (max-width:992px){
+    .section{
+      padding-top: 4rem;
+    }
+     
+ }
+ @media screen and (min-width:992px){
+     .section{
+       padding-top: 19rem;
+     }
+      
+  }
+  
+  *{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ 
+ html{
+   font-size: 6px;
+ }
+ @media screen and (min-width:576px) {
+   .container{
+       max-width: 540px;
+   }
+   html{
+       font-size: 6px;
+   }
+ 
+ 
+ }
+ @media screen and (min-width:768px) {
+   .container{
+       max-width: 720px;
+   }
+   html{
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:992px) {
+   .container{
+       max-width: 960px;
+   }
+   html {
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:1200px) {
+   .container{
+       max-width: 1140px;
+   }
+   html{
+       font-size: 9px;
+   }
+ }
+  /*Template Sonrası*/
+ 
+  /* Genel Ayarlar */
+  .section {
+    width: 100%;
+    height: auto;
+
+    position: relative;
+    display: block;
+    margin: auto 0;
+    padding-bottom: 40px;
+    justify-items: center;
+
+    background-color: #555; /* Arka plan rengi */
+    text-align: center; /* Metin ortalaması */
+ 
+    clear: both;
+    
+}
+.dealer-container{
+  display: none;
+}
+.application-form{
+  display: flex;
+  width: 90%;
+ 
+}
+.input-group{
+  float: left;
+  padding: 0px 0.4rem;
+  width: 33%;
+}
+
+.section h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 4rem;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.input-group select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.searchBtn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+#searchBtn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .section {
+      padding: 15px;
+  }
+
+  .input-group select,
+  #searchBtn {
+      font-size: 14px;
+      padding: 8px;
+  }
+}
+
+
+/* Genel Stil */
+.contentFind {
+  width: 95%;
+  height: auto;
+  padding: 30px;
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.dealer-container{
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contentFind .dealer {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  
+  padding: 30px;
+  display: flex;
+  
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.contentFind .dealer:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contentFind .dealer-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  display: flex; /* Flexbox düzenini kullan */
+  justify-content: center; /* İçeriği yatay olarak ortala */
+  align-items: center; /* İçeriği dikey olarak ortala */
+}
+
+.contentFind .dealer-img img {
+  max-width: 100%; /* Resmin genişliğini maksimum %100 yap */
+  max-height: 100%; /* Resmin yüksekliğini maksimum %100 yap */
+  object-fit: cover; /* Resmi kutuya sığacak şekilde kapla */
+}
+
+.contentFind .dealer:hover .dealer-img {
+  transform: scale(1.05);
+  
+}
+
+.contentFind .dealer-information {
+  padding: 0 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contentFind .dealer-information h1 {
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contentFind .dealer-information a {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+  padding: 10px 0;
+}
+
+
+.contentFind .dealer-information a:hover {
+  color: #0056b3;
+}
+
+
+
+
+.contentFind .dealer-information a i {
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.3s ease;
+  padding: 0 5px;
+  width: 30px;
+}
+
+.contentFind .dealer-information a:hover i {
+  color: #0056b3;
+  
+}
+
+
+

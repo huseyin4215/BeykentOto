@@ -1,0 +1,214 @@
+@media screen and (max-width:992px){
+    .section{
+      padding-top: 4rem;
+    }
+     
+ }
+ @media screen and (min-width:992px){
+     .section{
+       padding-top: 19rem;
+     }
+      
+  }
+  
+  *{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ 
+ html{
+   font-size: 6px;
+ }
+ @media screen and (min-width:576px) {
+   .container{
+       max-width: 540px;
+   }
+   html{
+       font-size: 6px;
+   }
+ 
+ 
+ }
+ @media screen and (min-width:768px) {
+   .container{
+       max-width: 720px;
+   }
+   html{
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:992px) {
+   .container{
+       max-width: 960px;
+   }
+   html {
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:1200px) {
+   .container{
+       max-width: 1140px;
+   }
+   html{
+       font-size: 9px;
+   }
+ }
+  /*Template Sonrası*/
+ 
+  /* Genel Ayarlar */
+  .section {
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9; /* Arka plan rengi */
+    position: relative;
+    display: block;
+    margin: auto 0;
+    padding-bottom: 40px;
+    clear: both;
+}
+
+.contact-container {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap; /* Sarmalayıcı düzeni sağlamak için */
+    max-width: 1200px;
+    margin: 0 auto; /* Ortala */
+    gap: 2rem; /* Öğeler arası boşluk */
+    animation: fadeIn 1s ease-in; /* Animasyon ekleme */
+    padding: 10px 10px;
+}
+
+.contact-info, .map-container {
+    flex: 1 1 400px; /* Esnek genişlik, minimum 400px */
+    background-color: #ffffff; /* Beyaz arka plan */
+    border-radius: 15px; /* Kenar yuvarlama */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+    padding: 10px 10px;
+    transition: transform 0.3s; /* Hover efekti için geçiş */
+}
+
+.contact-info:hover, .map-container:hover {
+    transform: translateY(-5px); /* Hover efekti */
+}
+
+.contact-info h2, .map-container h2 {
+    color: #333; /* Başlık rengi */
+    margin-bottom: 1rem; /* Alt boşluk */
+    font-size: 4rem; /* Başlık boyutu */
+    position: relative; /* Animasyon için konumlandırma */
+}
+
+.contact-info h2::after, .map-container h2::after {
+    content: "";
+    display: block;
+    width: 95%;
+    height: 1px;
+    float:left;
+    background: black; /* Alt çizgi rengi */
+    margin: 0 auto; /* Ortala */
+    margin-top: 5px; /* Boşluk */
+}
+
+.contact-info p {
+    margin: 2rem 0; /* Üst ve alt boşluk */
+    color: #555; /* Metin rengi */
+    font-size: 2rem; /* Metin boyutu */
+}
+
+.map-container {
+    max-width: 100%; /* Maksimum genişlik */
+    overflow: hidden; /* Taşmayı önle */
+}
+
+/* Harita boyutlandırması */
+.map-container iframe {
+    width: 100%; /* Responsive genişlik */
+    height: 300px; /* Responsive yükseklik */
+}
+
+/* Duyarlı tasarım */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Dikey hizalama */
+    }
+}
+
+/* Animasyon */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ 
+
+ .section-mail {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9; /* Arka plan rengi */
+    max-width: 800px;
+    margin: 35px auto; /* Ortala */
+    border-radius: 10px; /* Kenar yuvarlama */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+}
+
+.contact-form-container {
+    background-color: #ffffff; /* Beyaz arka plan */
+    border-radius: 10px; /* Kenar yuvarlama */
+    padding: 50px 2rem;
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    color: #333; /* Başlık rengi */
+    margin-bottom: 2rem; /* Alt boşluk */
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Alt boşluk */
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.5rem; /* Üst boşluk */
+    color: #555; /* Metin rengi */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%; /* Genişlik */
+    padding: 0.75rem; /* İç boşluk */
+    border: 1px solid #ccc; /* Kenar rengi */
+    border-radius: 5px; /* Kenar yuvarlama */
+    transition: border 0.3s; /* Geçiş efekti */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #007BFF; /* Fokus rengi */
+}
+
+.submit-button {
+    background-color: #007BFF; /* Buton rengi */
+    color: white; /* Yazı rengi */
+    padding: 0.75rem 1.5rem; /* İç boşluk */
+    border: none; /* Kenar yok */
+    border-radius: 5px; /* Kenar yuvarlama */
+    cursor: pointer; /* İmleç değişimi */
+    transition: background-color 0.3s; /* Geçiş efekti */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Hover rengi */
+}

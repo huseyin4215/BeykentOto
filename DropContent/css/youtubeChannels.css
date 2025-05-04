@@ -1,0 +1,153 @@
+@media screen and (max-width:992px){
+    .section{
+      padding-top: 4rem;
+    }
+     
+ }
+ @media screen and (min-width:992px){
+     .section{
+       padding-top: 19rem;
+     }
+      
+  }
+  
+  *{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ 
+ html{
+   font-size: 6px;
+ }
+ @media screen and (min-width:576px) {
+   .container{
+       max-width: 540px;
+   }
+   html{
+       font-size: 6px;
+   }
+ 
+ 
+ }
+ @media screen and (min-width:768px) {
+   .container{
+       max-width: 720px;
+   }
+   html{
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:992px) {
+   .container{
+       max-width: 960px;
+   }
+   html {
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:1200px) {
+   .container{
+       max-width: 1140px;
+   }
+   html{
+       font-size: 9px;
+   }
+ }
+  /*Template Sonrası*/
+ 
+  /* Genel Ayarlar */
+  .section {
+    width: 100%;
+    height: auto;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+    padding-bottom: 40px;
+
+
+    background-color: #f0f0f0; /* Arka plan rengi */
+    text-align: center; /* Metin ortalaması */
+ 
+    clear: both;
+    
+}
+.section h2{
+
+    padding: 20px 0;
+    font-size: 4rem;
+    margin: 0; /* Varsayılan margin'i sıfırlama */
+
+}
+
+
+.youtube-channel {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden; /* Kenarları yuvarlatırken taşmayı engeller */
+  width: 100%;
+  max-width: 800px;
+}
+
+.youtube-channel:hover {
+  transform: scale(1.05); /* Hover ile animasyon */
+}
+
+.channel-image{
+  margin: auto;
+  padding:0px 30px;
+}
+.channel-image img {
+  width: 150px; /* Resim genişliği */
+  height: 150px; /* Resim yüksekliği */
+  object-fit: cover; /* Resmi kapsayıcıya uydurur */
+  border-radius: 50%; /* Daire şeklinde görünüm */
+  
+}
+@media screen and (max-width:576px) {
+  .channel-image img {
+    width: 100px; /* Resim genişliği */
+    height: 100px; /* Resim yüksekliği */
+  }
+  
+}
+
+.channel-info {
+  padding: 20px;
+  flex: 1; /* Kalan alanı doldurur */
+  text-align: justify;
+}
+
+.channel-info h3 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.channel-info p {
+  font-size: 1.8rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ff0000; /* YouTube kırmızı rengi */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #cc0000; /* Koyu kırmızı hover rengi */
+}

@@ -1,0 +1,157 @@
+@media screen and (max-width:992px){
+    .section{
+      padding-top: 4rem;
+    }
+     
+ }
+ @media screen and (min-width:992px){
+     .section{
+       padding-top: 19rem;
+     }
+      
+  }
+  
+  *{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ 
+ html{
+   font-size: 6px;
+ }
+ @media screen and (min-width:576px) {
+   .container{
+       max-width: 540px;
+   }
+   html{
+       font-size: 6px;
+   }
+ 
+ 
+ }
+ @media screen and (min-width:768px) {
+   .container{
+       max-width: 720px;
+   }
+   html{
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:992px) {
+   .container{
+       max-width: 960px;
+   }
+   html {
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:1200px) {
+   .container{
+       max-width: 1140px;
+   }
+   html{
+       font-size: 9px;
+   }
+ }
+  /*Template Sonrası*/
+ 
+  /* Genel Ayarlar */
+  .section {
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9; /* Arka plan rengi */
+    position: relative;
+    display: block;
+    margin: auto 0;
+    padding-bottom: 40px;
+    background-color: #f4f4f4; /* Arka plan rengi */
+    text-align: center; /* Metin ortalaması */
+    background-color: #f9f9f9; /* Arka plan rengi */
+    clear: both;
+}
+
+
+
+
+.values-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Ortala */
+}
+
+.values-title {
+    font-size: 5rem; /* Başlık boyutu */
+    margin-bottom: 2.3rem; /* Alt boşluk */
+    color: #333; /* Başlık rengi */
+    animation: fadeIn 1s ease-in-out; /* Animasyon ekle */
+}
+
+.values-list {
+    display: flex;
+    flex-wrap: wrap; /* Taşmayı engelle */
+    justify-content: space-around; /* Eşit aralıklarla yerleştir */
+}
+
+.value-item {
+    background-color: #fff; /* Kart arka plan rengi */
+    border-radius: 10px; /* Kenar yuvarlama */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+    margin: 1rem; /* Dış boşluk */
+    padding: 2rem; /* İç boşluk */
+    width: calc(25% - 2rem); /* Kart genişliği, 4 kolonda düzenli */
+    transition: transform 0.3s, box-shadow 0.3s; /* Geçiş efektleri */
+    animation: slideIn 0.5s ease forwards; /* Animasyon ekle */
+}
+
+.value-item:hover {
+    transform: translateY(-5px); /* Hover efekt */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Hover gölgesi */
+}
+
+.value-item h3 {
+    color: #007BFF; /* Başlık rengi */
+    margin-bottom: 0.5rem; /* Alt boşluk */
+}
+
+.value-item p {
+    color: #555; /* Açıklama rengi */
+    font-size: 1.3rem; /* Açıklama boyutu */
+    line-height: 1.5; /* Satır yüksekliği */
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Mobil uyumluluk */
+@media screen and (max-width: 768px) {
+    .value-item {
+        width: calc(50% - 2rem); /* Mobilde 2 kolonda düzen */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .value-item {
+        width: 100%; /* Mobilde tek kolon */
+    }
+}
+

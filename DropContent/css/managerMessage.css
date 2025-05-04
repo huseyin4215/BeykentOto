@@ -1,0 +1,182 @@
+@media screen and (max-width:992px){
+    .section{
+      padding-top: 4rem;
+    }
+     
+ }
+ @media screen and (min-width:992px){
+     .section{
+       padding-top: 19rem;
+     }
+      
+  }
+  
+  *{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ 
+ html{
+   font-size: 6px;
+ }
+ @media screen and (min-width:576px) {
+   .container{
+       max-width: 540px;
+   }
+   html{
+       font-size: 6px;
+   }
+ 
+ 
+ }
+ @media screen and (min-width:768px) {
+   .container{
+       max-width: 720px;
+   }
+   html{
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:992px) {
+   .container{
+       max-width: 960px;
+   }
+   html {
+       font-size: 7px;
+   }
+ 
+ }
+ @media screen and (min-width:1200px) {
+   .container{
+       max-width: 1140px;
+   }
+   html{
+       font-size: 9px;
+   }
+ }
+  /*Template Sonrası*/
+ 
+  /* Genel Ayarlar */
+  .section {
+    width: 100%;
+    height: auto;
+
+    position: relative;
+    display: block;
+    margin: auto 0;
+    padding-bottom: 40px;
+
+    text-align: center;
+ 
+    clear: both;
+    background: linear-gradient(135deg, black, rgb(50, 48, 48)); /* Degrade arka plan */
+}
+
+.section .container {
+    max-width: 1200px;
+    margin: 0 auto; /* Ortala */
+    display: flex; /* İki sütun için flex kullan */
+    flex-wrap: wrap; /* Taşmayı engelle */
+    justify-content: center; /* Alanı doldur */
+    align-items: center; /* Dikey ortalama */
+    border-radius: 20px; /* Yuvarlatılmış köşeler */
+    overflow: hidden; /* Taşmaları gizle */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 1); /* Gölge efekti */
+    position: relative; /* Pozisyonu belirle */
+}
+
+.president-photo {
+    flex: 1; /* Eşit alan kapla */
+    margin: 1rem; /* Boşluk ekle */
+    position: relative; /* Konumlandırma için gerekli */
+    animation: zoomIn 0.8s ease; /* Giriş animasyonu */
+}
+
+.president-photo img {
+    width: 500%; /* Resim genişliği */
+    max-width: 650px; /* Maksimum genişlik */
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+    transition: transform 0.3s; /* Geçiş animasyonu */
+    padding: 20px 0px;
+}
+
+.president-photo img:hover {
+    transform: scale(1.05); /* Hover etkisi */
+}
+
+.president-message {
+    flex: 1; /* Eşit alan kapla */
+    margin: 1rem; /* Boşluk ekle */
+    padding: 2rem 4rem; /* İç boşluk */
+    background: white; /* Beyaz arka plan */
+    border-radius: 15px; /* Yuvarlatılmış köşeler */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+    position: relative; /* Konumlandırma için gerekli */
+    animation: fadeInUp 0.8s ease; /* Giriş animasyonu */
+}
+
+.president-message h2 {
+    font-size: 3.5rem; /* Başlık boyutu */
+    margin-bottom: 1rem; /* Alt boşluk */
+    color: #2c3e50; /* Başlık rengi */
+    position: relative; /* Konumlandırma için gerekli */
+}
+
+.president-message h2::after {
+    content: '';
+    display: block;
+    width: 90%; /* Çizgi genişliği */
+    height: 4px; /* Çizgi yüksekliği */
+    background: black; /* Çizgi rengi */
+    margin: 10px auto; /* Ortala */
+}
+
+.president-message p {
+    line-height: 1.8; /* Satır yüksekliği */
+    color: #34495e; /* Metin rengi */
+    margin-bottom: 1rem; /* Alt boşluk */
+    text-align: justify;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5); /* Küçük başla */
+        opacity: 0; /* Görünmez başla */
+    }
+    to {
+        transform: scale(1); /* Normal boyuta geç */
+        opacity: 1; /* Görünür hale gel */
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px); /* Aşağıdan yukarıya giriş */
+        opacity: 0; /* Görünmez başla */
+    }
+    to {
+        transform: translateY(0); /* Normal konum */
+        opacity: 1; /* Görünür hale gel */
+    }
+}
+
+/* Mobil uyumluluk */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Tek sütuna geçiş */
+        align-items: center; /* Ortala */
+    }
+    .president-photo {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem; /* Alt boşluk ekle */
+    }
+    .president-photo img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem; /* Alt boşluk ekle */
+    }
+}
